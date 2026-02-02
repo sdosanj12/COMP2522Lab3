@@ -3,7 +3,7 @@ package code.ca.bcit.comp2522.lab03;
 import java.util.Objects;
 
 /**
- * Represents an IPod music player.
+ * Represents an iPod music player.
  *
  * @author Supreet
  * @author Ziad
@@ -12,7 +12,7 @@ import java.util.Objects;
  */
 public final class IPod extends IDevice {
     private final int numberOfSongs;
-    private final double maxVolumeDb; // Explicit units
+    private final double maxVolumeDb;
 
     public IPod(final int numberOfSongs, final double maxVolumeDb) {
         super("music");
