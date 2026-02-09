@@ -7,6 +7,7 @@ import java.util.Objects;
  * IPhones are considered equal if they have the same amount of minutes remaining.
  *
  * @author Ziad Malik
+ * @author Supreet Dosanj
  * @version 1.0
  */
 public class IPhone extends IDevice
@@ -20,9 +21,8 @@ public class IPhone extends IDevice
     /**
      * Constructs an IPhone with the specified minutes remaining and carrier.
      *
-     * @param minutesRemaining the minutes remaining on the phone plan (must not be negative)
-     * @param carrier the phone carrier (must not be null or blank)
-     * @throws IllegalArgumentException if minutesRemaining is negative or carrier is null or blank
+     * @param minutesRemaining the minutes remaining on the phone plan
+     * @param carrier the phone carrier
      */
     public IPhone(final double minutesRemaining,
                   final String carrier)
@@ -126,7 +126,8 @@ public class IPhone extends IDevice
     {
         if (minutesRemaining < MIN_MINUTES)
         {
-            throw new IllegalArgumentException("Minutes remaining cannot be negative: " + minutesRemaining);
+            throw new IllegalArgumentException("Minutes remaining cannot be negative: "
+                    + minutesRemaining);
         }
     }
 

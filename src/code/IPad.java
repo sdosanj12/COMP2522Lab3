@@ -7,6 +7,7 @@ import java.util.Objects;
  * IPads are considered equal if they have the same operating system version.
  *
  * @author Ziad Malik
+ * @author Supreet Dosanj
  * @version 1.0
  */
 public class IPad extends IDevice
@@ -20,8 +21,7 @@ public class IPad extends IDevice
      * Constructs an IPad with the specified case status and OS version.
      *
      * @param hasCase whether the iPad has a case
-     * @param osVersion the operating system version (must not be null or blank)
-     * @throws IllegalArgumentException if osVersion is null or blank
+     * @param osVersion the operating system version
      */
     public IPad(final boolean hasCase,
                 final String osVersion)
